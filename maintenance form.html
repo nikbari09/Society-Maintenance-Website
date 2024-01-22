@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maintenance Payment</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Maintenance Payment</h2>
+    <form action="http://localhost/payment_process.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="apartment">Apartment Number:</label>
+        <input type="text" id="apartment" name="apartment" required>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" placeholder="2500" required>
+	
+	<h4>Payment Details</h4>
+                    <input type="radio" name="pay" id="pay" checked class="radio">
+                    <label for="pay"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+                    <input type="radio" name="pay" id="pay" class="radio">
+                    <label for="pay"><span><i class="fa fa-cc-paypal"></i> Paypal</span></label>
+
+	<input type="tel" placeholder="Card Number" required class="name">
+                    <i class="fa fa-credit-card icon"></i>
+
+	<input type="tel" placeholder="Card CVC" required class="name">
+                    <i class="fa fa-user icon"></i>
+
+	<select>
+                        <option>01 july</option>
+                        <option>02 july</option>
+                        <option>03 july</option>
+			<option>04 july</option>
+                        <option>05 july</option>
+                        <option>06 july</option>
+			<option>07 july</option>
+                        <option>08 july</option>
+                        <option>09 july</option>
+			<option>10 july</option>
+			<option>11 july</option>
+			<option>12 july</option>
+			<option>13 july</option>
+			<option>14 july</option>
+                    </select>
+                    <select>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+			<option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+			<option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                    </select>
+               
+        <input type="submit" value="Pay Now">
+    </form>
+
+	
+</body>
+</html>
